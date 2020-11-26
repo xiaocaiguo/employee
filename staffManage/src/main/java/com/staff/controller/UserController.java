@@ -116,8 +116,8 @@ public class UserController {
 			
 			System.out.println("进入祖册");
 			// 判断用户的sex,0---男，1----女
-			String sex = user.getSex().equalsIgnoreCase("0") ? "男" : "女";
-			user.setSex(sex);
+//			String sex = user.getSex().equalsIgnoreCase("0") ? "男" : "女";
+//			user.setSex(sex);
 
 //			String id = (int) (Math.random() * 100000) + "";
 			String id = (String) UUID.randomUUID().toString().subSequence(0, 4);
