@@ -99,7 +99,7 @@ public class EmployeeController {
 			return Msg.fail().add("employee", "你没有修改数据");
 		}
 		
-		if(employee.getId()==employee2.getId()) {
+		if(employee2!=null&&employee.getId()==employee2.getId()) {
 			return Msg.fail().add("employee", "员工姓名已存在");
 		}
 		
